@@ -82,12 +82,8 @@ a:focus {
     outline: 0;
 }
 
-.nav.navbar-nav {
-    background-color: rgba(255, 255, 255, .4);
-}
-
-.navbar-custom.top-nav-collapse .nav.navbar-nav {
-    background-color: rgba(0, 0, 0, 0);
+.navbar {
+    background-color: #67b0d1;
 }
 
 .navbar-custom ul.nav li a {
@@ -98,7 +94,7 @@ a:focus {
     font-weight: 700;
 }
 
-.navbar-custom.top-nav-collapse ul.nav li a {
+.navbar-custom ul.nav li a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -126,7 +122,7 @@ a:focus {
     background: #fefefe;
 }
 
-.navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
+.navbar ul.nav ul.dropdown-menu li a {
     color: #666;
 }
 
@@ -839,7 +835,6 @@ Parallax
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -847,7 +842,6 @@ Parallax
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -882,10 +876,6 @@ Parallax
 }
 
 @media (max-width: 480px) {
-
-    .navbar-custom .nav.navbar-nav {
-        background-color: rgba(255, 255, 255, .4);
-    }
 
     .navbar.navbar-custom.navbar-fixed-top {
         margin-bottom: 30px;
