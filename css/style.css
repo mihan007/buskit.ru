@@ -307,20 +307,36 @@ hr {
 --- Intro
 ============================ */
 
-.intro {
-    width: 100%;
-    position: relative;
-
-    background-image: url(../img/bg1.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #FFFFFF;
+@media only screen
+and (min-device-width : 375px)
+    {
+    .intro {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #FFFFFF;
+        background-image: url(../img/bg2.png);
+    }
 }
 
+@media only screen
+and (min-device-width : 700px)
+{
+    .intro {
+        width: 100%;
+        position: relative;
+
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #FFFFFF;
+    }
+}
+
+
 #intro.intro {
-    padding: 10% 0 0 0;
-    padding-bottom: 10px;
+    padding: 10% 0 15% 0;
 }
 
 .slogan {
@@ -361,6 +377,7 @@ hr {
 }
 
 .intro .slogan h4 {
+    padding-top: 50px;
     color: #4e61ff;
     line-height: 50px;
     font-size: 27px;
