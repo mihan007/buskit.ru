@@ -27,6 +27,14 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Шоу-проект Деловая Кухня"/>
+    <meta property="og:url" content="http://buskit.ru/thankyou.html" />
+    <meta property="og:description" content="Шоу-проект Деловая кухня - первое интерактивное телевизионное бизнес шоу с участием знаменитых персон, которые добились признанного успеха в своей сфере деятельности."/>
+    <meta property="og:image" content="http://buskit.ru/img/logo_big.png" />
+    <!-- /Open Graph -->
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -242,7 +250,6 @@
         </div>
     </div>
     <div class="container">
-
         <div class="row">
             <div class="col-lg-2 col-lg-offset-5">
                 <hr class="marginbot-50">
@@ -251,13 +258,13 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="boxed-grey">
-                    <form id="contact-form">
+                    <form id="contact-form" action="mail.php" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">
                                         Ваше имя</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Введите имя"
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя"
                                            required="required"/>
                                 </div>
                                 <div class="form-group">
@@ -267,7 +274,7 @@
                                     <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                        <input type="email" class="form-control" id="email"
+                                        <input type="email" class="form-control" id="email" name="email"
                                                placeholder="Введите электропочту"
                                                required="required"/></div>
                                 </div>
@@ -276,11 +283,11 @@
                                         Тема письма</label>
                                     <select id="subject" name="subject" class="form-control" required="required">
                                         <option value="na" selected="" disabled>Выберите вариант:</option>
-                                        <option value="service">Хочу быть вашим главным гостем</option>
-                                        <option value="suggestions">Хочу быть вашим гостем бизнес-экспертом</option>
-                                        <option value="product">Хочу быть спонсором</option>
-                                        <option value="product">Хочу быть зрителем</option>
-                                        <option value="product">Чего хочу не знаю..</option>
+                                        <option value="iWantToBeMainGuest">Хочу быть вашим главным гостем</option>
+                                        <option value="iWantToBeBussinessExpert">Хочу быть вашим гостем бизнес-экспертом</option>
+                                        <option value="iWantToGiveYouMoney">Хочу быть спонсором</option>
+                                        <option value="iWantToDoNothing">Хочу быть зрителем</option>
+                                        <option value="iDoNotKnowWhatIWant">Хочу..</option>
                                     </select>
                                 </div>
                             </div>

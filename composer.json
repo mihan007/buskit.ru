@@ -1,0 +1,13 @@
+{
+    "name": "mihan007/buskit.ru",
+    "description": "Site for supporting project \"Bussiness Kitchen\", Saint Petersburg, Russia",
+    "require": {
+        "swiftmailer/swiftmailer": "~5.4"
+    },
+    "authors": [
+        {
+            "name": "Mikhail Kuklin",
+            "email": "mihan007@ya.ru"
+        }
+    ]
+}

@@ -41,4 +41,25 @@
         });
     });
 
+    $(document).on('click', '#btnContactUs', function(e) {
+        var $form = $(this).closest('form'),
+            $btn = $(this);
+        e.preventDefault();
+        $.ajax( 'mail.php', {
+            type: 'POST',
+            data: $form.serialize(),
+            success: function( resp ) {
+                $btn.addClass('hide');
+                $('.emailOk').removeClass('hide');
+                $('.emailError').addClass('hide');
+            },
+            error: function( req, status, err ) {
+                $btn.removeClass('hide');
+                $('.emailOk').addClass('hide');
+                $('.emailError').removeClass('hide');
+            }
+        });
+        return false;
+    });
+
 })(jQuery);

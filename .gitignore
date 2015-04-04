@@ -34,3 +34,6 @@ composer.lock
 # mac deployment helpers
 switch
 index
+
+#security
+Credentials.php
