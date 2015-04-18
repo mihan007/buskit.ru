@@ -1,0 +1,284 @@
+/*
+	@author Interactive agency "Central marketing" http://iacm.ru
+	@copyright Copyright (c) 2015, Interactive agency "Central marketing"	
+	
+	Awesome CSS grid.
+*/
+
+/*
+	Container
+	@example .container {margin:0 auto;max-width:1140px;}
+*/
+
+.container {margin:0 auto;max-width:1140px;}
+
+/*
+	Row
+*/
+
+.row {width:100%;}
+.row > * {-webkit-transition:all 500ms ease-out;-moz-transition:all 500ms ease-out;-o-transition:all 500ms ease-out;-ms-transition:all 500ms ease-out;transition:all 500ms ease-out;}
+.row:before, .row:after {content:"";display:table;}
+.row:after {clear:both;}
+.row {*zoom:1;}
+
+/*
+img
+*/
+
+img.circle {border-radius: 50%;}	
+
+/*
+
+Padding 0
+	
+*/	
+
+.col-1.zero,
+.col-2.zero, .col-2x.zero,
+.col-3.zero, .col-3x.zero,
+.col-4.zero, .col-4x.zero,
+.col-5.zero, .col-5x.zero,
+.col-6.zero, .col-6x.zero,
+.col-7.zero, .col-7x.zero,
+.col-8.zero, .col-8x.zero,
+.col-9.zero, .col-9x.zero,
+.col-10.zero, .col-10x.zero,
+.col-11.zero, .col-11x.zero,
+.col-12.zero, .col-12x.zero {padding: 0;} 
+
+/*
+	Columns
+*/
+
+.col-1,
+.col-2, .col-2-ml, .col-2-mr, .col-2-mlr,
+.col-3, .col-3x,
+.col-4, .col-4x,
+.col-5, .col-5x,
+.col-6, .col-6x,
+.col-7, .col-7x,
+.col-8, .col-8x,
+.col-9, .col-9x,
+.col-10, .col-10x,
+.col-11, .col-11x,
+.col-12, .col-12x 
+{margin:0;padding:.5rem;float:left;display:block;}
+
+/*
+	Columns width
+*/
+
+.col-1 {width:100%;}
+.col-2 {width:50%;}
+.col-3 {width:33.3333333333%;}
+.col-4 {width:25%;}
+.col-5 {width:20%;}
+.col-6 {width:16.6666666667%;}
+.col-7 {width:14.2857142857%;}
+.col-8 {width:12.5%;}
+.col-9 {width:11.1111111111%;}
+.col-10 {width:10%;}
+.col-11 {width:9.09090909091%;}
+.col-12 {width:8.33333333333%;}
+
+/*
+	X columns width (for make full row)
+*/
+
+.col-3x {width:66.6666666667%;}
+.col-4x {width:75%;}
+.col-5x {width:80%;}
+.col-6x {width:83.3333333333%;}
+.col-7x {width:85.7142857143%;}
+.col-8x {width:87.5%;}
+.col-9x {width:88.8888888889%;}
+.col-10x {width:90%;}
+.col-11x {width:90.9090909091%;}
+.col-12x {width:91.6666666667%;}
+
+
+/*
+	Margins
+*/ 
+
+.col-2-ml {width:49%;margin-left:1%;}
+.col-2-mr {width:49%;margin-right:1%;}
+.col-2-mlr {width:48%;margin:0 1%;}
+	
+	
+/*
+	@media for desktop and screens > 1200px
+*/
+
+@media only screen and (min-width:1200px) {}
+
+/*
+	@media for desktop and screens <= 1200px
+*/
+
+@media only screen and (max-width:1200px) {
+	
+	/*
+		Columns
+	*/
+	
+    .col-12 {width:16.6666666667%;}
+    
+    /*
+		X columns
+	*/
+	  
+    .col-12x {width:83.3333333333%;}
+    
+}
+
+/*
+	Tablets <= 1024px (iPad landscape)
+*/
+
+@media only screen and (max-width:1024px) {
+	
+	/*
+		Columns
+	*/
+	
+	.col-2 {width:100%;}
+	.col-4 {width:50%;}
+	.col-5 {width:20%}
+    .col-6 {width:33.3333333333%;}
+    .col-8 {width:25%;}
+    .col-9 {width:33.3333333333%;}
+    .col-10 {width:20%;}
+    .col-12 {width:25%;}
+    
+    /*
+		X columns
+	*/
+     
+    .col-5x {width:80%;}
+    .col-6x {width:66.6666666667%;}
+    .col-8x {width:75%;}
+    .col-9x {width:66.6666666667%;}
+    .col-10x {width:80%;}
+    .col-12x {width:75%;}
+    
+}
+
+/*
+	Tablets <= 768px (iPad portrait)
+*/
+
+@media handheld, only screen and (max-width:768px) {
+	
+	/*
+		Columns
+	*/
+	
+    .col-2 {width:50%;}
+    .col-4 {width:50%;}
+    .col-6 {width:50%;}
+    .col-8 {width:50%;}
+    .col-9 {width:100%;}
+    .col-10 {width:50%;}
+    .col-12 {width:33.3333333333%;}
+    
+    /*
+		X columns
+	*/
+    
+    .col-4x {width:50%;}
+    .col-6x {width:50%;}
+    .col-8x {width:50%;}
+    .col-9x {width:100%;}
+    .col-10x {width:50%;}
+    .col-12x {width:66.6666666667%;}
+    
+}
+
+/*
+	Mobile devices <= 480px (iPhone landscape)
+*/
+
+@media handheld, only screen and (max-width:480px) {
+	
+	/*
+		Columns
+	*/
+	
+    .col-2 {width:100%;}
+    .col-3 {width:33.3333333333%;}
+    .col-4 {width:50%;}
+    .col-5 {width:33.3333333333%;}
+    .col-6 {width:50%;}
+    .col-7 {width:100%;}
+    .col-8 {width:100%;}
+    .col-10 {width:100%;}
+    .col-11 {width:100%;}
+    .col-12 {width:50%;}
+    
+    /*
+		X columns
+	*/
+
+    .col-2x {width:100%;}
+    .col-3x {width:100%;}
+    .col-4x {width:100%;}
+    .col-5x {width:50%;}
+    .col-6x {width:50%;}
+    .col-7x {width:100%;}
+    .col-8x {width:100%;}
+    .col-10x {width:100%;}
+    .col-11x {width:100%;}
+    .col-12x {width:50%;}
+
+}
+
+/*
+	Mobile devices <= 320px (iPhone portrait)
+*/
+
+@media handheld, only screen and (max-width:320px) {
+	
+	/*
+		Container
+	*/
+	
+    .container {width:100%!important;max-width:100%!important;}
+    
+    /*
+		Columns
+	*/
+
+    .col-2 {width:100%;}
+    .col-3 {width:33.3333333333%;}
+    .col-4 {width:50%;}
+    .col-5 {width:33.3333333333%;}
+    .col-6 {width:50%;}
+    .col-7 {width:100%;}
+    .col-8 {width:100%;}
+    .col-10 {width:100%;}
+    .col-11 {width:100%;}
+    .col-12 {width:50%;}
+    
+    /*
+		X columns
+	*/
+
+    .col-2x {width:100%;}
+    .col-3x {width:100%;}
+    .col-4x {width:100%;}
+    .col-5x {width:100%;}
+    .col-6x {width:100%;}
+    .col-7x {width:100%;}
+    .col-8x {width:100%;}
+    .col-10x {width:100%;}
+    .col-11x {width:100%;}
+    .col-12x {width:50%;}
+}
+
+/*
+	Mobile devices <= 240px
+*/
+
+@media handheld, only screen and (max-width:240px) {}
