@@ -44,28 +44,30 @@
 		/*
 			Countdown
 		*/
-		
-		$('.countdown').final_countdown({
-			start: '1429315200',
-			end: '1429833600',
-			now: '1429315200',
-			seconds: {
-			    borderColor: '#FFF',
-			    borderWidth: '3'
-			},
-			minutes: {
-			    borderColor: '#FFF',
-			    borderWidth: '3'
-			},
-			hours: {
-			    borderColor: '#FFF',
-			    borderWidth: '3'
-			},
-			days: {
-			    borderColor: '#FFF',
-			    borderWidth: '3'
-			}
-		});
+
+        if ($('.countdown').length > 0) {
+            $('.countdown').final_countdown({
+                start: '1429315200',
+                end: '1429833600',
+                now: '1429315200',
+                seconds: {
+                    borderColor: '#FFF',
+                    borderWidth: '3'
+                },
+                minutes: {
+                    borderColor: '#FFF',
+                    borderWidth: '3'
+                },
+                hours: {
+                    borderColor: '#FFF',
+                    borderWidth: '3'
+                },
+                days: {
+                    borderColor: '#FFF',
+                    borderWidth: '3'
+                }
+            });
+        }
 	});
 	
 })(jQuery, document, window);
