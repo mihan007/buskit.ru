@@ -108,6 +108,9 @@
         var $form = $(this).closest('form'),
             $btn = $(this),
             errors = 0;
+        if ($btn.attr('doing') == 1) {
+            return;
+        }
         $('.emailOk').addClass('hide');
         $('.emailError').addClass('hide');
         e.preventDefault();
@@ -115,6 +118,7 @@
         if (errors > 0) {
             return;
         }
+        $btn.text('Один момент. Бронирую...').attr('doing', '1');
         $.ajax( 'mail.php', {
             type: 'POST',
             data: $form.serialize(),
@@ -122,11 +126,13 @@
                 $btn.addClass('hide');
                 $('.emailOk').removeClass('hide');
                 $('.emailError').addClass('hide');
+                $btn.attr('doing', '0');
             },
             error: function( req, status, err ) {
                 $btn.removeClass('hide');
                 $('.emailOk').addClass('hide');
                 $('.emailError').removeClass('hide');
+                $btn.text('Забронировать билет').attr('doing', '0');
             }
         });
         return false;
