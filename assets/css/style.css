@@ -123,6 +123,7 @@ h3 {font-size: 18px; margin:.8rem 0 .8rem; font-weight: 400;}
 #cd-intro #cd-intro-tagline {width: 90%;  max-width: 1170px;  margin: 0 auto;  text-align: center;  padding-top: 250px;}
 #cd-intro h1 {font-size: 24px; font-size: 1.5rem; font-weight: 300; color: #FFF;}
 #cd-intro h2 {color: #FFF; font-weight: 300; margin-top: 10px;}
+#cd-intro h3 {color: #FFF; font-weight: 200; margin-top: 20px;}
 
 @media only screen and (min-width: 768px) {
   #cd-intro {
@@ -157,6 +158,18 @@ h3 {font-size: 18px; margin:.8rem 0 .8rem; font-weight: 400;}
   -moz-osx-font-smoothing: grayscale;
   color: white;
 }
+
+.middle-btn {
+    display: inline-block;
+    padding: 1em 1.8em;
+    background-color: rgba(200, 70, 30, .8);
+    margin-top: 1em;
+    border-radius: 20em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+
 .no-touch .cd-btn:hover {
   background-color: rgba(200, 70, 30, 1);
 }
