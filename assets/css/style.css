@@ -458,12 +458,24 @@ h3 {font-size: 18px; margin:.8rem 0 .8rem; font-weight: 400;}
 
 }
 
+.numbers {
+    padding-top: 12px;
+}
 .number {
     margin-top: 10px;
     float: right;
-    border: 1px solid #000000;
+    border: 1px solid #919191;
+    background-color: #bababa;
     padding: 10px;
     font-weight: 500;
+}
+
+.remains {
+    margin-top: 20px;
+    float: right;
+    font-weight: 500;
+    margin-right: 10px;
+    font-size: 120%;
 }
 
 strong {
@@ -566,6 +578,11 @@ strong {
     margin: 0;
     padding: 0;
 }
+
+.company-social .social-vk a {
+    background: #3873ae;
+}
+
 
 .company-social .social-facebook a {
     background: #3873ae;

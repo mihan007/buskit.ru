@@ -25,9 +25,10 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Бизнес приват-шоу Секреты Деловой Кухни"/>
-    <meta property="og:url" content="http://buskit.ru" />
-    <meta property="og:description" content="Бизнес приват-шоу Секреты Деловой Кухни - Раскрываем рецепты успеха известных персон."/>
-    <meta property="og:image" content="http://buskit.ru/images/logo.png" />
+    <meta property="og:url" content="http://buskit.ru"/>
+    <meta property="og:description"
+          content="Бизнес приват-шоу Секреты Деловой Кухни - Раскрываем рецепты успеха известных персон."/>
+    <meta property="og:image" content="http://buskit.ru/images/logo.png"/>
     <!-- /Open Graph -->
 
     <!-- Style, Fonts -->
@@ -37,6 +38,7 @@
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/remodal.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body class="">
 <header class="cd-header">
@@ -630,11 +632,10 @@
         </div>
         <div class="row">
             <div class="col-2">
-                <h2 class="right">Осталось мест:</h2>
-
                 <div class="numbers right">
                     <div class="number number_1">2</div>
                     <div class="number number_2">4</div>
+                    <div class="remains">Осталось мест</div>
                 </div>
             </div>
             <div class="col-2" style="padding-left: 2%">
@@ -647,12 +648,15 @@
     <!-- #Контакты -->
     <section id="cd-placeholder-8" class="contacts container cd-section">
         <h2>Контакты</h2>
+
         <div class="row">
             <div class="col-2">
                 <address>
-                    <p><strong>Бизнес приват-шоу "Секреты Деловой Кухни"</strong>,<br>
-                    ул. Разъезжая, 12, офис 211, Санкт-Петербург</p>
+                    <p><strong>Бизнес приват-шоу "Секреты Деловой Кухни"</strong><br>
+                        Санкт-Петербург, ул. Разъезжая, 12, офис 211</p>
+
                     <p><abbr title="Телефон">Тел.:</abbr> +7 (812) 927-6866</p>
+
                     <p><abbr title="Телефон">Тел.:</abbr> +7 (931) 360-1666</p>
                 </address>
             </div>
@@ -665,11 +669,11 @@
                     <ul class="company-social">
                         <li class="social-vk"><a href="https://vk.com/businesskitcken" target="_blank"><i
                                 class="fa fa-vk"></i></a></li>
-                        <li class="social-facebook"><a href="https://www.facebook.com/events/880948825284555/"
-                                                       target="_blank"><i class="fa fa-facebook"></i></a>
-                        </li>
                         <li class="social-twitter"><a href="https://twitter.com/buskit_ru" target="_blank"><i
                                 class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="social-facebook"><a href="https://www.facebook.com/events/880948825284555/"
+                                                       target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
                         <!--<li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>-->
                         <!--</li>-->
@@ -693,9 +697,6 @@
 
                     <p>Начало в 18:00</p>
 
-                    <p></p>
-
-                    <p>+7 (812) 927-6866</p>
                 </div>
             </div>
             <div class="col-2 zero">
@@ -783,14 +784,17 @@
 
             <div class="col-1">
                 <label for="name">Ваше имя и фамилия</label>
+
                 <p class="help help-name hide">Заполните поле имя, пожалуйста</p>
                 <input type="text" class="form-control" id="name" placeholder="Введите имя" required="required"
                        autofocus=""/>
                 <label for="email">Ваша электронная почта</label>
+
                 <p class="help help-email hide">Заполните поле электронная почта, пожалуйста</p>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Введите электронную почту"
                        required="required"/>
                 <label for="email">Ваш номер телефона</label>
+
                 <p class="help help-number hide">Заполните поле номер телефона, пожалуйста</p>
                 <input type="number" class="form-control" id="number" name="number" placeholder="Введите номер телефона"
                        required="required"/></div>

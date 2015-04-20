@@ -131,5 +131,9 @@
         });
         return false;
     });
+
+    $(document).on('click', '.toggle-btn', function(e) {
+        setTimeout(function(){$('#name').focus()}, 50);
+    });
 	
 })(jQuery, document, window);
