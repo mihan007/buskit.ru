@@ -786,7 +786,7 @@
                 <label for="name">Ваше имя и фамилия</label>
 
                 <p class="help help-name hide">Заполните поле имя, пожалуйста</p>
-                <input type="text" class="form-control" id="name" placeholder="Введите имя" required="required"
+                <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required="required"
                        autofocus=""/>
                 <label for="email">Ваша электронная почта</label>
 
@@ -797,11 +797,12 @@
 
                 <p class="help help-number hide">Заполните поле номер телефона, пожалуйста</p>
                 <input type="number" class="form-control" id="number" name="number" placeholder="Введите номер телефона"
-                       required="required"/></div>
-            <a href="#" class="middle-btn" id="btnContactUs">Забронировать билет</a>
+                       required="required"/>
+                <a href="#" class="middle-btn" id="btnContactUs">Забронировать билет</a>
 
-            <div class="emailOk hide">Мы получили информацию и свяжемся с фами в ближайшее время.</div>
-            <div class="emailError hide">Простите нас. Что-то пошло не так. Попробуйте еще раз чуть позже.</div>
+                <div class="emailOk hide">Мы получили информацию и свяжемся с фами в ближайшее время.</div>
+                <div class="emailError hide">Простите нас. Что-то пошло не так. Попробуйте еще раз чуть позже.</div>
+            </div>
         </div>
 </div>
 </form>
