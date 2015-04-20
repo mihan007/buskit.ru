@@ -423,6 +423,12 @@ h3 {font-size: 18px; margin:.8rem 0 .8rem; font-weight: 400;}
   .cd-section h2 {font-size: 30px; font-size: 1.875rem;}
   .cd-section p {font-size: 20px; font-size: 1.1rem;
   }
+  .right {text-align: right}
+
+    .price {
+        margin-right: 40%;
+        text-align: right;
+    }
 }
 
 .place .photo {background: url(/images/place_photo.jpg) center center; height: 350px; background-size: cover; position: relative;}
@@ -450,6 +456,27 @@ h3 {font-size: 18px; margin:.8rem 0 .8rem; font-weight: 400;}
 	.text .type-time { font-size: 14px!important; }
 	.clock-item {margin: 0px 30px 30px 30px;}
 
+}
+
+.number {
+    margin-top: 10px;
+    float: right;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-weight: 500;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.know-how-list li {
+    margin-bottom: 10px;
+    list-style: disc;
+}
+
+.reason {
+    min-height: 100px;
 }
 
 

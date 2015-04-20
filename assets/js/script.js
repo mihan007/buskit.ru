@@ -45,11 +45,15 @@
 			Countdown
 		*/
 
+        if (!Date.now) {
+            Date.now = function() { return new Date().getTime(); }
+        }
+
         if ($('.countdown').length > 0) {
             $('.countdown').final_countdown({
-                start: '1429315200',
-                end: '1429833600',
-                now: '1429315200',
+                start: '1427220000',
+                end: '1429898400',
+                now: Math.floor(Date.now() / 1000),
                 seconds: {
                     borderColor: '#FFF',
                     borderWidth: '3'
