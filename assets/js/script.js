@@ -73,5 +73,63 @@
             });
         }
 	});
+
+    function checkForm() {
+        var errors = 0;
+        if ($('#name').val().length == 0) {
+            errors++;
+            $('.help-name').removeClass('hide');
+        } else {
+            $('.help-name').addClass('hide');
+        }
+        if ($('#email').val().length == 0) {
+            errors++;
+            $('.help-email').removeClass('hide');
+        } else {
+            $('.help-email').addClass('hide');
+        }
+        if ($('#number').val().length == 0) {
+            errors++;
+            $('.help-number').removeClass('hide');
+        } else {
+            $('.help-number').addClass('hide');
+        }
+
+        return errors;
+    }
+
+    $(document).on('change, keyup', 'input', function(){
+        if ($('.help').is(':visible')) {
+            checkForm();
+        }
+    });
+
+    $(document).on('click', '#btnContactUs', function(e) {
+        var $form = $(this).closest('form'),
+            $btn = $(this),
+            errors = 0;
+        $('.emailOk').addClass('hide');
+        $('.emailError').addClass('hide');
+        e.preventDefault();
+        errors = checkForm();
+        if (errors > 0) {
+            return;
+        }
+        $.ajax( 'mail.php', {
+            type: 'POST',
+            data: $form.serialize(),
+            success: function( resp ) {
+                $btn.addClass('hide');
+                $('.emailOk').removeClass('hide');
+                $('.emailError').addClass('hide');
+            },
+            error: function( req, status, err ) {
+                $btn.removeClass('hide');
+                $('.emailOk').addClass('hide');
+                $('.emailError').removeClass('hide');
+            }
+        });
+        return false;
+    });
 	
 })(jQuery, document, window);
