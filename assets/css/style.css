@@ -14,8 +14,11 @@ h3 {font-size: 18px; margin:.8rem 0 .8rem; font-weight: 400;}
 
 
 .prof .col-5,
-.experts .col-3 {text-align: center;}
+.col-3 {text-align: center;}
 .experts .col-3 img {padding: 3rem;}
+
+.experts div, .know-how-list { text-align: left; padding: 5px 0px 5px 0px}
+.experts p { text-align: center; font-weight: bolder}
 
 @media handheld, only screen and (max-width:480px) {
 	.experts .col-3 {font-size: .8em;}
