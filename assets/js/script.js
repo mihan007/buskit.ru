@@ -104,6 +104,18 @@
         }
     });
 
+    $(document).on('click', '.log-btn', function(e) {
+        ga('send', 'event', 'button', 'click', 'openOrderModal');
+    });
+
+    $(document).on('click', '.log-btn-end', function(e) {
+        ga('send', 'event', 'button', 'click', 'sendOrderButtonClicked');
+    });
+
+    $(document).on('click', '.money-btn', function(e) {
+        ga('send', 'event', 'button', 'click', 'moneyBtnClicked');
+    });
+
     $(document).on('click', '#btnContactUs', function(e) {
         var $form = $(this).closest('form'),
             $btn = $(this),
@@ -119,6 +131,7 @@
             return;
         }
         $btn.text('Один момент. Бронирую...').attr('doing', '1');
+        ga('send', 'event', 'button', 'click', 'orderSending');
         $.ajax( 'mail.php', {
             type: 'POST',
             data: $form.serialize(),
@@ -127,12 +140,14 @@
                 $('.emailOk').removeClass('hide');
                 $('.emailError').addClass('hide');
                 $btn.attr('doing', '0');
+                ga('send', 'event', 'button', 'click', 'orderSentOk');
             },
             error: function( req, status, err ) {
                 $btn.removeClass('hide');
                 $('.emailOk').addClass('hide');
                 $('.emailError').removeClass('hide');
                 $btn.text('Забронировать билет').attr('doing', '0');
+                ga('send', 'event', 'button', 'click', 'orderSentError');
             }
         });
         return false;

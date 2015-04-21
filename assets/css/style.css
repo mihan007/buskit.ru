@@ -16,6 +16,8 @@ h3 {font-size: 18px; margin:.8rem 0 .8rem; font-weight: 400;}
 .prof .col-5,
 .col-3 {text-align: center;}
 .experts .col-3 img {padding: 3rem;}
+.experts .col-3 .description {font-size: .8rem; line-height: 1.2; text-align: center;}
+
 
 .experts div, .know-how-list { text-align: left; padding: 5px 0px 5px 0px}
 .experts p { text-align: center; font-weight: bolder}
