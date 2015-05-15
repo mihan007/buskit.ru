@@ -937,3 +937,17 @@ strong {
 .company-social .social-vimeo a:hover {
     background: #71c6f3;
 }
+
+#cd-placeholder-12 {
+    line-height: 150%;
+}
+
+#cd-placeholder-12 h3 {
+    text-align: right;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#cd-placeholder-12 .reason {
+    margin-top: 40px;
+}
