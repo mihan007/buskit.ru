@@ -950,4 +950,12 @@ strong {
 
 #cd-placeholder-12 .reason {
     margin-top: 40px;
+    display: inline-block;
+}
+
+.reason img {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    margin-right: 20px;
 }
